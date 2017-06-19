@@ -58,6 +58,6 @@ def load():
                     column = float(salary[column])
                 line[index] = column
             data.append(line)
-            if num == 10000:
+            if num == 100:
                 break
     return data
