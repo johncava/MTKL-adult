@@ -33,19 +33,19 @@ def load():
                 if index == 2:
                     column = float(column)
                 if index == 3:
-                    column = float(education[column])
+                    column = float(education[column]/15.0)
                 if index == 4:
                     column = float(column)
                 if index == 5: 
-                    column = float(marital[column])
+                    column = float(marital[column]/6.0)
                 if index == 6:
-                    column = float(occupation[column])
+                    column = float(occupation[column]/13.0)
                 if index == 7:
-                    column = float(relationship[column])
+                    column = float(relationship[column]/5.0)
                 if index == 8:
-                    column = float(race[column])
+                    column = float(race[column]/4.0)
                 if index == 9:
-                    column = float(sex[column])
+                    column = float(sex[column]/2.0)
                 if index == 10:
                     column = float(column)
                 if index == 11:
@@ -53,11 +53,11 @@ def load():
                 if index == 12:
                     column = float(column)
                 if index == 13:
-                    column = float(country[column])
+                    column = float(country[column]/49.0)
                 if index == 14:
                     column = float(salary[column])
                 line[index] = column
             data.append(line)
-            if num == 100:
+            if num == 10:
                 break
     return data
